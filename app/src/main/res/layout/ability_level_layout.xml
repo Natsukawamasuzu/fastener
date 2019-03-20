@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android = "http://schemas.android.com/apk/res/android"
+             android:layout_width = "match_parent"
+             android:layout_height = "match_parent"
+             app:cardCornerRadius="@dimen/dp_12"
+             xmlns:app = "http://schemas.android.com/apk/res-auto">
+
+    <com.zstu.natsukawa.fasterner.optionview.AbilityLevelView
+        android:id="@+id/status"
+        android:layout_gravity="center"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:padding="25dp"
+        app:dimension_count = "5"
+        app:radius = "100dp"
+        app:ability_line_color = "@color/grey"
+        app:ability_line_width = "1dp"
+        app:frame_line_width="0.5dp"
+        app:set_alpha = "155"
+        android:textSize = "16sp"
+        app:set_animation_duration = "500"
+        app:data_area_color = "@color/button_start_end_color"
+        app:frame_line_color = "@color/black" />
+
+</androidx.cardview.widget.CardView>

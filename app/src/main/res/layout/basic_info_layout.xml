@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    app:cardBackgroundColor="@color/button_start_end_color"
+    app:contentPadding="@dimen/dp_24"
+    app:cardCornerRadius="@dimen/dp_12">
+
+  <RelativeLayout
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent"
+      android:padding="@dimen/dp_3">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/personal_avatar"
+        android:layout_width = "80dp"
+        android:layout_height = "80dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/personal_name"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_toEndOf="@id/personal_avatar"
+        android:textColor="@color/white"
+        android:contentDescription="@string/text_for_personal_info_student_name"/>
+
+    <TextView
+        android:id="@+id/personal_student_number"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_toEndOf="@id/personal_avatar"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_3"
+        android:textColor="@color/white"
+        android:layout_below="@id/personal_name"
+        android:contentDescription="@string/text_for_personal_info_student_number"/>
+
+    <TextView
+        android:id="@+id/personal_member_level"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_toEndOf="@id/personal_avatar"
+        android:layout_below="@id/personal_student_number"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_marginStart="@dimen/dp_18"
+        android:contentDescription="@string/text_for_personal_info_student_member_level"/>
+
+    <TextView
+        android:id="@+id/personal_role_in_team"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_toEndOf="@id/personal_avatar"
+        android:layout_below="@id/personal_member_level"
+        android:layout_marginStart="@dimen/dp_18"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_3"
+        android:contentDescription="@string/text_for_personal_info_student_role_in_team"/>
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

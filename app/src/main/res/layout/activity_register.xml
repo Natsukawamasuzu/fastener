@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = "com.zstu.natsukawa.fasterner.register.RegisterActivity">
+
+  <ImageView
+      android:id = "@+id/register_background"
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent"
+      android:contentDescription = "@string/background_of_the_register_activity" />
+
+  <androidx.cardview.widget.CardView
+      android:layout_gravity = "center"
+      android:layout_marginStart = "@dimen/dp_24"
+      android:layout_marginEnd = "@dimen/dp_24"
+      android:layout_height = "wrap_content"
+      android:layout_width = "match_parent"
+      app:cardCornerRadius = "@dimen/dp_12">
+
+    <LinearLayout
+       android:layout_width = "match_parent"
+       android:layout_height = "match_parent"
+       android:padding = "@dimen/dp_24"
+       android:orientation = "vertical">
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id = "@+id/rgst_student_number_textinputlayout"
+          android:layout_width = "match_parent"
+          android:layout_height = "wrap_content"
+          style = "@style/TextInputLayoutTheme"
+          app:hintEnabled = "true"
+          app:counterMaxLength = "13"
+          app:counterEnabled = "true"
+          app:errorEnabled = "true"
+          android:hint = "@string/hint_for_student_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id = "@+id/rgst_student_number"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:inputType = "numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/rgst_student_name_textinputlayou"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        style = "@style/TextInputLayoutTheme"
+        app:hintEnabled = "true"
+        app:errorEnabled = "true"
+        android:layout_marginTop = "@dimen/dp_6"
+        android:hint = "@string/hint_for_student_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id = "@+id/rgst_student_name"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:inputType = "text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/rgst_student_phone_textinputlayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        style = "@style/TextInputLayoutTheme"
+        android:layout_marginTop="@dimen/dp_6"
+        app:hintEnabled = "true"
+        app:counterEnabled = "true"
+        app:counterMaxLength = "11"
+        app:errorEnabled = "true"
+
+        android:hint = "@string/hint_for_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id = "@+id/rgst_student_phone"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:inputType = "phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/rgst_student_password_textinputlayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        style = "@style/TextInputLayoutTheme"
+        app:hintEnabled = "true"
+        app:counterMaxLength = "16"
+        app:counterEnabled = "true"
+        app:errorEnabled = "true"
+        app:passwordToggleEnabled = "true"
+        android:layout_marginTop = "@dimen/dp_6"
+        android:hint = "@string/hint_for_student_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id = "@+id/rgst_student_password"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:inputType = "textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/rgst_student_password_confirm_textinputlayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        style = "@style/TextInputLayoutTheme"
+        app:hintEnabled = "true"
+        app:counterMaxLength = "16"
+        app:errorEnabled = "true"
+        app:counterEnabled = "true"
+        android:layout_marginTop = "@dimen/dp_6"
+        app:passwordToggleEnabled = "true"
+        android:hint = "@string/hint_for_confirm_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id = "@+id/rgst_student_password_confirm"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:inputType = "textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id = "@+id/rgst_register_button"
+        android:layout_width = "match_parent"
+        android:layout_height = "@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_9"
+        android:layout_marginStart = "@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:layout_gravity = "center_horizontal"
+        android:background = "@drawable/login_register_button_style"
+        android:textColor = "@color/white"
+        android:gravity = "center"
+        android:enabled = "false"
+        android:text = "@string/register_button_text" />
+
+   </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

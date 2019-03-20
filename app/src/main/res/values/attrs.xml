@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name = "AbilityLevelView">
+    <attr name = "android:textColor"/>
+    <attr name = "android:textSize"/>
+
+    <attr name = "radius" format="dimension"/>
+    <attr name = "maximum_value" format="integer"/>
+    <attr name = "dimension_count" format="integer"/>
+    <attr name = "level_count" format="integer"/>
+
+    <attr name = "frame_line_color" format="color"/>
+    <attr name = "frame_line_width" format="dimension"/>
+
+    <attr name = "data_area_color" format="color"/>
+    <attr name = "set_alpha" format="integer"/>
+
+    <attr name = "ability_line_width" format="dimension"/>
+    <attr name = "ability_line_color" format="color"/>
+
+    <attr name = "set_animation_duration" format="integer"/>
+  </declare-styleable>
+</resources>

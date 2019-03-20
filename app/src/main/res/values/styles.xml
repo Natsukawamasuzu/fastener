@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+  <style name = "AppTheme" parent = "Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+    <item name = "colorPrimary">@color/button_start_end_color</item>
+    <item name = "colorPrimaryDark">@color/button_start_end_color</item>
+    <item name = "colorAccent">@color/button_start_end_color</item>
+  </style>
+
+  <style name = "LoginActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <item name = "colorAccent">@color/button_start_end_color</item>
+  </style>
+
+  <style name = "RegisterActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <item name = "colorAccent">@color/button_start_end_color</item>
+  </style>
+
+  <style name = "TextInputLayoutTheme" parent="LoginActivityTheme">
+    <item name = "errorTextAppearance">@style/TextInputLayoutStyle</item>
+    <item name = "counterTextAppearance">@style/TextInputLayoutStyle</item>
+    <item name = "counterOverflowTextAppearance">@style/TextInputLayoutStyle</item>
+    <item name = "hintTextAppearance">@style/TextInputLayoutStyle</item>
+    <item name="colorControlNormal">@color/grey</item>
+    <item name="colorControlActivated">@color/button_start_end_color</item>
+    <item name = "colorControlHighlight">@color/button_start_end_color</item>
+    <item name = "android:textColor">@color/button_start_end_color</item>
+  </style>
+  
+  <style name="TextInputLayoutStyle">
+    <item name = "android:textColor">@color/button_start_end_color</item>
+    <item name = "android:textSize">@dimen/sp_14</item>
+  </style>
+
+  <style name = "AppTheme.NoActionBar">
+    <item name = "windowActionBar">false</item>
+    <item name = "windowNoTitle">true</item>
+  </style>
+
+  <style name = "AppTheme.AppBarOverlay" parent = "ThemeOverlay.AppCompat.Dark.ActionBar" >
+  </style>
+
+  <style name = "AppTheme.PopupOverlay" parent = "ThemeOverlay.AppCompat.Light" />
+
+</resources>

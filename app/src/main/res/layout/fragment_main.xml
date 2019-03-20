@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:context="com.zstu.natsukawa.fasterner.main.MainFragment">
+
+    <include
+            android:id="@+id/main_person_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_12"
+            layout="@layout/basic_info_layout"/>
+
+    <GridLayout
+            android:layout_below="@id/main_person_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_margin="@dimen/dp_12">
+
+        <Button
+                android:id="@+id/main_attendance_button"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/attendance"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:padding="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="签到"/>
+
+        <Button
+                android:id="@+id/main_ask_for_leave_button"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/ask_for_leave"
+                android:padding="@dimen/dp_12"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="请假"/>
+
+        <Button
+                android:id="@+id/main_person_info"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/ask_for_leave"
+                android:padding="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="个人信息"/>
+
+        <Button
+                android:id="@+id/main_message"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/attendance"
+                android:padding="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="消息"/>
+
+        <Button
+                android:id="@+id/main_test"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/attendance"
+                android:padding="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="测试"/>
+
+        <Button
+                android:id="@+id/main_tech_choice"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:drawableTop="@mipmap/attendance"
+                android:padding="@dimen/dp_12"
+                android:background="@drawable/main_fragment_button_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="技术选型"/>
+
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent">
+
+  <TextView
+      android:layout_margin="@dimen/dp_24"
+      android:id="@+id/question_textview"
+      android:layout_width = "match_parent"
+      android:layout_height = "wrap_content"
+      android:hint="@string/hint_for_question" />
+
+  <RadioGroup
+      android:id="@+id/question_choices"
+      android:padding="@dimen/dp_24"
+      android:layout_below="@id/question_textview"
+      android:layout_width = "match_parent"
+      android:layout_height = "wrap_content">
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/choice_1"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/hint_for_choices"
+        android:layout_marginBottom="@dimen/dp_18"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/choice_2"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/hint_for_choices"
+        android:layout_marginBottom="@dimen/dp_18"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/choice_3"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/hint_for_choices"
+        android:layout_marginBottom="@dimen/dp_18"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/choice_4"
+        android:layout_width = "match_parent"
+        android:hint="@string/hint_for_choices"
+        android:layout_height = "wrap_content" />
+
+  </RadioGroup>
+
+  <View
+      android:layout_width = "match_parent"
+      android:layout_height = "1px"
+      android:layout_above="@id/question_button_layout"
+      android:background="@color/grey"/>
+
+  <LinearLayout
+      android:id="@+id/question_button_layout"
+      android:layout_width = "match_parent"
+      android:layout_height = "48dp"
+      android:orientation = "horizontal"
+      android:layout_alignParentBottom="true">
+
+      <Button
+          android:id="@+id/previous_question"
+          android:layout_width = "wrap_content"
+          android:layout_height = "match_parent"
+          android:background="@android:color/transparent"
+          style = "@style/Widget.AppCompat.Button.Borderless"
+          android:foreground="?attr/selectableItemBackground"
+          android:text="@string/previous"
+          android:layout_weight = "1" />
+
+      <View
+          android:layout_width = "1px"
+          android:layout_height = "match_parent"
+          android:background="@color/grey"/>
+
+
+      <Button
+          android:id="@+id/next_question"
+          android:layout_width = "wrap_content"
+          android:layout_height = "match_parent"
+          android:layout_weight = "1"
+          android:background="@android:color/transparent"
+          android:text="@string/next"
+          android:foreground="?attr/selectableItemBackground"
+          style = "@style/Widget.AppCompat.Button.Borderless" />
+
+  </LinearLayout>
+
+</RelativeLayout>

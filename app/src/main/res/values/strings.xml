@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">fastener</string>
+    <string name="hint_for_student_number">在此输入你的学号</string>
+    <string name="hint_for_student_password">在此输入你的密码</string>
+    <string name="hint_for_student_name">在此输入你的姓名</string>
+    <string name="hint_for_confirm_password">确认你的密码</string>
+    <string name="hint_for_phone">在此输入你的手机号码</string>
+    <string name="register_button_text">注册</string>
+    <string name="hint_for_student_number_textinput">学号</string>
+    <string name="hint_for_student_password_textinput">密码</string>
+    <string name="hint_for_student_name_textinput">姓名</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Student \'s avatar</string>
+    <string name="action_attendance">签到</string>
+    <string name="action_ask_for_leave">请假</string>
+    <string name="text_for_personal_info_student_number">2015339960033</string>
+    <string name="text_for_personal_info_student_name">Natsukawa</string>
+    <string name="text_for_personal_info_student_member_level">普通队员</string>
+    <string name="text_for_personal_info_student_role_in_team">Android移动端</string>
+    <string name="hint_for_question">这是问题示例</string>
+    <string name="hint_for_choices">选项示例</string>
+    <string name="hint_for_navigation_button">按钮文字示例</string>
+    <string name="previous">上一题</string>
+    <string name="next">下一题</string>
+    <string name="complete">提交</string>
+    <string name="login_button_text">登录</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_messages">暂时没有消息呢~</string>
+
+    <string name="message_item_time_text_sample">2019/1/18 15:20</string>
+    <string name="message_item_content_text_sample">这是一条样本信息，用来查看消息文本的样式</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">没有账号？点此注册</string>
+    <string name="imageview_description">to show background of this activity</string>
+    <string name="label_for_time_in_progress">时间：</string>
+    <string name="text_for_time_zone">显示进度更新的时间</string>
+    <string name="label_for_progress_source">来自：</string>
+    <string name="text_for_progress_source">显示进度的来源（前端/后台/移动端）</string>
+    <string name="label_for_progress_content">内容：</string>
+    <string name="text_for_progress_content">展示进度详情内容</string>
+    <string name="name_in_nav_header">Natsukawa masuzu</string>
+    <string name="background_of_the_register_activity">background of the register activity</string>
+    <string name="move_to_person_info_textview_text">点击查看个人信息</string>
+    <string name="basic_test">基础测试</string>
+    <string name="basic_test_explaination">新队员成为普通队员前必须要完成两项测试</string>
+    <string name="ability_test_card_title">能力测试</string>
+</resources>
