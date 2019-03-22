@@ -51,4 +51,7 @@
     <string name="basic_test">基础测试</string>
     <string name="basic_test_explaination">新队员成为普通队员前必须要完成两项测试</string>
     <string name="ability_test_card_title">能力测试</string>
+    <string name="ability_test_card_subtitle">摸底学生特长（如演讲、视频制作等）</string>
+    <string name="characteristic_test_card_title">性格测试</string>
+    <string name="characteristic_test_card_subtitle">了解学生性格，扬长避短</string>
 </resources>
